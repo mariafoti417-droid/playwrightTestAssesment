@@ -1,4 +1,3 @@
-// PetApi/utils/apiHelpers.js
 const { PetAPI } = require('../endpoints/petApi');
 const { generatePetPayload } = require('./payloads');
 

@@ -1,4 +1,3 @@
-// PetApi/tests/findPet.spec.js
 const { test, expect } = require('@playwright/test');
 const { PetAPI } = require('../endpoints/petApi');
 
@@ -7,7 +6,7 @@ test.describe('Petstore API - Find Pet (by status)', () => {
 
   for (const status of statuses) {
     test(`Find pets with status "${status}"`, async ({ request }) => {
-      // Create a new PetAPI instance using the test-scoped request
+  
       const api = new PetAPI(request);
 
       const res = await api.findPetsByStatus(status);
